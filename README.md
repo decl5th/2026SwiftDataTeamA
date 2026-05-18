@@ -8,6 +8,7 @@
 | Mason | [@decl5th](https://github.com/decl5th) |
 | Selina | [@Selina0515](https://github.com/Selina0515) |
 | Hazi | [@ahazi0930](https://github.com/hazi0930) |
+| Steve | [@stevekoun](https://github.com/stevekoun) |
 
 
 ## 구성
