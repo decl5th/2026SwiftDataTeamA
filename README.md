@@ -1,4 +1,4 @@
-# Persistence Co Lab
+# Persistence Co Labs
 
 Apple Developer Academy 러너가 3주 동안 로컬 데이터 저장 방식을 직접 써 보고 비교하는 Tech Map입니다.
 
