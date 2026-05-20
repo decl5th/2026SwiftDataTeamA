@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 
+// 테스트
 struct ContentView: View {
     var body: some View {
         TabView {
