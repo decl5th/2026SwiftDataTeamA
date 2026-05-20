@@ -7,6 +7,7 @@
 
 import SwiftData
 import SwiftUI
+// 변경 점 테스트
 
 struct SwiftDataPracticeView: View {
     // modelContext는 SwiftData에서 insert, delete, save 같은 작업을 맡는다.
