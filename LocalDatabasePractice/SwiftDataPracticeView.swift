@@ -3,7 +3,8 @@
 //  LocalDatabasePractice
 //
 //  Created by Admin on 5/18/26.
-//
+//연습해볼게요
+
 
 import SwiftData
 import SwiftUI
