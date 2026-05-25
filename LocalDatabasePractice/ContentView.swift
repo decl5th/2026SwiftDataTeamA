@@ -31,5 +31,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: PracticeNote.self, inMemory: true)
+        .modelContainer(for: [PracticeNote.self, NoteFolder.self], inMemory: true)
 }

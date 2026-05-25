@@ -18,11 +18,33 @@ final class PracticeNote {
     var body: String
     var createdAt: Date
     var isPinned: Bool
+    
+    var folder: NoteFolder?
 
-    init(title: String, body: String, createdAt: Date = .now, isPinned: Bool = false) {
+    init(title: String,
+         body: String,
+         createdAt: Date = .now,
+         isPinned: Bool = false,
+         folder: NoteFolder? = nil
+    ) {
         self.title = title
         self.body = body
         self.createdAt = createdAt
         self.isPinned = isPinned
+        self.folder = folder
+    }
+}
+
+@Model
+final class NoteFolder {
+    var name: String
+    var createdAt: Date
+
+    @Relationship(deleteRule: .cascade, inverse: \PracticeNote.folder)
+    var notes: [PracticeNote] = []
+
+    init(name: String, createdAt: Date = .now) {
+        self.name = name
+        self.createdAt = createdAt
     }
 }

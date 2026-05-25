@@ -12,7 +12,7 @@ import SwiftData
 struct LocalDatabasePracticeApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            PracticeNote.self,
+            PracticeNote.self,NoteFolder.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
