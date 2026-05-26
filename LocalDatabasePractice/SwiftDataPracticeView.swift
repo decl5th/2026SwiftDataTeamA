@@ -110,5 +110,5 @@ private struct NoteRow: View {
 
 #Preview {
     SwiftDataPracticeView()
-        .modelContainer(for: PracticeNote.self, inMemory: true)
+        .modelContainer(for: [PracticeNote.self, Folder.self], inMemory: true)
 }

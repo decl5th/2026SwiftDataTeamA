@@ -18,11 +18,24 @@ final class PracticeNote {
     var body: String
     var createdAt: Date
     var isPinned: Bool
+    var folder: Folder? // 이게 추가되어야 한다. optional은 init 필요 없다.
 
     init(title: String, body: String, createdAt: Date = .now, isPinned: Bool = false) {
         self.title = title
         self.body = body
         self.createdAt = createdAt
         self.isPinned = isPinned
+    }
+}
+
+@Model
+final class Folder {
+    var folderName: String
+    
+    @Relationship(deleteRule: .cascade) // 이걸 추가해줘서 폴더가 삭제되면 노트도 사라지는..
+    var notes: [PracticeNote] = [] // 이 폴더 안에는 노트 목록이 있고, 처음엔 빈값
+    
+    init(folderName: String) {
+        self.folderName = folderName
     }
 }
